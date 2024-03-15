@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func Hello() string {
+func Hello(name string) string {
 	//single quotes are for 'bytes' and 'runes' in golang, cannot be used for string
-	return "Hello, world"
+	return "Hello, "+name
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("world"))
 }
