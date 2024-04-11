@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func Sum(array [3]int) int{
+func Sum(array []int) int{
 	var result int = 0
 	for _, number := range array{
 		result += number
@@ -12,5 +12,5 @@ func Sum(array [3]int) int{
 }
 
 func main(){
-	Sum([3]int{1,2,3})
+	Sum([]int{1,2,3})
 }
